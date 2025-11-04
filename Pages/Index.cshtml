@@ -1,0 +1,49 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Pokemon</h1>
+    <div class="container">
+        @foreach (var pokemon in Model.Pokemons)
+        {
+            <div class="column" style="background:@pokemon.Color;">
+                <img src="@pokemon.image" alt="@pokemon.Name" width="100" height="100" />
+                <p>@pokemon.Name</p>
+                <p>@pokemon.Description</p>
+                @for (int i = 0; i < @pokemon.Types.Count(); i++)
+                {
+                    <p>@pokemon.Types[i]</p>
+                }
+            </div>
+        }
+    </div>
+  @*   <table>
+        <thead>
+            <tr>
+                <th>Imagem</th>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Tipo</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var pokemon in Model.Pokemons)
+            {
+                <tr style="background:@pokemon.Color;">
+                    <td>
+                        <img src="@pokemon.image" alt="@pokemon.Name" width="100" height="100" />
+                    </td>
+                    <td>@pokemon.Name</td>
+                    <td>@pokemon.Description</td>
+                    @for (int i = 0; i < @pokemon.Types.Count(); i++)
+                    {
+                        <td>@pokemon.Types[i]</td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table> *@
+</div>
