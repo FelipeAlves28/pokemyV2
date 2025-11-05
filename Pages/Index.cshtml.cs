@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Newtonsoft.Json;
-using PokemyV2.Enum;
 using PokemyV2.Models;
 using System;
 
