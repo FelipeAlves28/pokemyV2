@@ -2,6 +2,10 @@ html {
   font-size: 14px;
 }
 
+p {
+    margin: 0;
+}
+
 @media (min-width: 768px) {
   html {
     font-size: 16px;
@@ -30,22 +34,50 @@ body {
 .column {
     flex: 1;
     padding: 20px;
-    max-width: 200px;
-    min-width: 200px;
+    max-width: 400px;
+    min-width: 400px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px 10px 10px 10px;
 }
 
-    .column:hover {
-        cursor: pointer;
-        transform: scale(1.2);
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    }
+.column:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
 
 .pokemon-name{
     font-weight: 700;
 }
 
-.type {
+.card-subtitle {
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.fw600 {
     font-weight: 600;
 }
+
+.flex-column-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flex-row-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 5px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

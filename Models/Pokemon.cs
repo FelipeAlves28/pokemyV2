@@ -149,7 +149,7 @@ namespace PokemyV2.Models
                         continue;
                     }
 
-                    HtmlTypes.Append($"<p class='type' style='color:{TypeColor};'>{typeName}<p>");
+                    HtmlTypes.Append($"<p class='card-subtitle' style='color:{TypeColor};'>{typeName}</p>");
                 }
 
                 return HtmlTypes.ToString();
